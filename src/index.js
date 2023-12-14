@@ -31,14 +31,14 @@ app.get('/', (request, response) => {
   response.send('<h1>Welcome to homepage</h1>');
 });
 
-// route GET - /users
-app.get('/users', (request, response) => {
+// route GET - /api/users
+app.get('/api/users', (request, response) => {
   console.log('request.query ===', request.query);
   response.json(users);
 });
 
-// route GET - /users/1
-app.get('/users/1', (request, response) => {
+// route GET - /api/users/1
+app.get('/api/users/1', (request, response) => {
   console.log('request.query ===', request.query);
   response.json(users[0]);
 });
