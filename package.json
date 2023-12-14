@@ -4,7 +4,8 @@
   "description": "First back end project using express",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/MariusCodeAcademy/type19_02_node_rest_express/issues"
   },
-  "homepage": "https://github.com/MariusCodeAcademy/type19_02_node_rest_express#readme"
+  "homepage": "https://github.com/MariusCodeAcademy/type19_02_node_rest_express#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
