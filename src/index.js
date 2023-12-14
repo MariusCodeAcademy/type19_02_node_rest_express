@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const morgan = require('morgan');
 const PORT = 3000;
 
 // Middleware
 app.use(cors());
+app.use(morgan('dev'));
 
 const users = [
   { name: 'John', age: 25 },
