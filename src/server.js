@@ -56,14 +56,20 @@ const users = [
   },
 ];
 
+// apjungti // GET - /api/users ir // GET - /api/users?userId=1 i viena route
+
 // gauti visus userius
 // GET - /api/users - grazina visus vartotojus
 app.get('/api/users', (request, response) => {
+  // jei nera userId parametro
   // response.send('gauti visus userius');
   response.json(users);
+
+  // jei yra atfiltruojam ir grazina konkretu vartotoja
 });
 // gauti userius kuriu amzius dauiau nei 21
 app.get('/api/users/adults', (request, response) => {
+  // amziu paduodam kaip query parametra ?age=30
   // atfliltruoti users
   const filtered = users.filter((userObj) => userObj.age >= 25);
   // issiusti atfiltruotus atgal su response
@@ -101,6 +107,7 @@ app.get('/api/users/single', (request, response) => {
 // isrikiuoti userius pagal amziu
 // GET - /api/users/sort/age -> isrikiuoti userius pagal amziu
 app.get('/api/users/sort/age', (request, response) => {
+  // query parametras ?order=desc arba ?order=asc
   // isrikiuoti users
   const usersCopy = sorted.slice();
   // const usersCopy = [...users]
