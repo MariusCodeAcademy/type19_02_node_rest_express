@@ -1,0 +1,25 @@
+{
+  "name": "02_node_rest_express",
+  "version": "0.0.1",
+  "description": "First back end project using express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariusCodeAcademy/type19_02_node_rest_express.git"
+  },
+  "keywords": [
+    "rest",
+    "express",
+    "node",
+    "api"
+  ],
+  "author": "Marius K.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MariusCodeAcademy/type19_02_node_rest_express/issues"
+  },
+  "homepage": "https://github.com/MariusCodeAcademy/type19_02_node_rest_express#readme"
+}
