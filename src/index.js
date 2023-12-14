@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const PORT = 3000;
+
+// Middleware
+app.use(cors());
 
 const users = [
   { name: 'John', age: 25 },
@@ -29,7 +33,14 @@ app.get('/', (request, response) => {
 
 // route GET - /users
 app.get('/users', (request, response) => {
+  console.log('request.query ===', request.query);
   response.json(users);
+});
+
+// route GET - /users/1
+app.get('/users/1', (request, response) => {
+  console.log('request.query ===', request.query);
+  response.json(users[0]);
 });
 
 app.listen(PORT, () => {
